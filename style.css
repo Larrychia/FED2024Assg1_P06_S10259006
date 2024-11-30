@@ -919,3 +919,8 @@
     button:hover {
         background-color: #45a049;
     }
+    @media (max-width: 767px) {
+        .form-container {
+            padding: 20px;
+        }
+    }
