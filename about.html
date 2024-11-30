@@ -37,6 +37,43 @@
 
             </div>
         </section>
+        <div class="form-container">
+            <h1>Feedback Form</h1>
+            <form action="/submit-feedback" method="post">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+    
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+    
+                <label for="experience">How would you rate your overall experience?</label>
+                <select id="experience" name="experience">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+    
+                <label for="likes">What did you like the most about your experience?</label>
+                <textarea id="likes" name="likes" rows="4" placeholder="Your feedback"></textarea>
+    
+                <label for="improvement">What could we improve?</label>
+                <textarea id="improvement" name="improvement" rows="4" placeholder="Your suggestions"></textarea>
+    
+                <label for="recommend">How likely are you to recommend us to others?</label>
+                <select id="recommend" name="recommend">
+                    <option value="very_likely">Very Likely</option>
+                    <option value="somewhat_likely">Somewhat Likely</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unlikely">Unlikely</option>
+                </select>
+    
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
         <section class="location-section">
             <h2>Our Location</h2>
             <div class="location-info">
