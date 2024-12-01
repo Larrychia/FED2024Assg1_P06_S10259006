@@ -13,7 +13,7 @@ Some key points:
 * Goal: Easily schedule and manage recurring cleaning
 * Value proposition: Maintain a clean home without the burden of doing it themselves
 
-![Wireframe](Images\Wireframe.jpg)
+![Wireframe](Images/Wireframe.jpg)
 ## Features
 Home page first includes offers and a small brief on our company
 Service page includes quick information about the services we provide + reviews from customers
