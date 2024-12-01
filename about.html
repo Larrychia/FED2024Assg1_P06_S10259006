@@ -40,37 +40,45 @@
 
         <div class="form-container">
             <h1>Feedback Form</h1>
-            <form action="/submit-feedback" method="post">
+            <form id="feedbackForm" action="/submit-feedback" method="post" novalidate>
                 <label for="name">Name (optional):</label>
                 <input type="text" id="name" name="name" placeholder="Your name">
     
                 <label for="email">Email (optional):</label>
                 <input type="email" id="email" name="email" placeholder="Your email">
+                <div id="emailError" class="error"></div>
     
                 <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" required>
+                <div id="dateError" class="error"></div>
     
                 <label for="experience">How would you rate your overall experience?</label>
-                <select id="experience" name="experience">
+                <select id="experience" name="experience" required>
+                    <option value="">Select an option</option>
                     <option value="excellent">Excellent</option>
                     <option value="good">Good</option>
                     <option value="average">Average</option>
                     <option value="poor">Poor</option>
                 </select>
+                <div id="experienceError" class="error"></div>
     
                 <label for="likes">What did you like the most about your experience?</label>
-                <textarea id="likes" name="likes" rows="4" placeholder="Your feedback"></textarea>
+                <textarea id="likes" name="likes" rows="4" placeholder="Your feedback" required minlength="10"></textarea>
+                <div id="likesError" class="error"></div>
     
                 <label for="improvement">What could we improve?</label>
-                <textarea id="improvement" name="improvement" rows="4" placeholder="Your suggestions"></textarea>
+                <textarea id="improvement" name="improvement" rows="4" placeholder="Your suggestions" required minlength="10"></textarea>
+                <div id="improvementError" class="error"></div>
     
                 <label for="recommend">How likely are you to recommend us to others?</label>
-                <select id="recommend" name="recommend">
+                <select id="recommend" name="recommend" required>
+                    <option value="">Select an option</option>
                     <option value="very_likely">Very Likely</option>
                     <option value="somewhat_likely">Somewhat Likely</option>
                     <option value="neutral">Neutral</option>
                     <option value="unlikely">Unlikely</option>
                 </select>
+                <div id="recommendError" class="error"></div>
     
                 <button type="submit">Submit Feedback</button>
             </form>
